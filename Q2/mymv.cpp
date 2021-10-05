@@ -38,9 +38,7 @@ int main(int argc, char* argv[]){
             }
             std::string path=strcat(argv[argc-1],"/");                                                  //
             path.append(s);                                                                             //These 2 lines forms the absolute new path for the file to be moved by => destination + "/" + filename(retreaved from original file using function)
-            int n = path.length();                                                                      //
-            // printf("%s",path.c_str());                                                               //
-            // printf("%s",s.c_str());                                                                  //
+            int n = path.length();                                                                      //                                                              //
             char dest[n+1];                                                                             //
             strcpy(dest, path.c_str());                                                                 //These lines are to convert the path name from string to a array of char as remove function only accept array of character and not string.
             // printf("%s",dest);                                                                       //
